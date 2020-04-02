@@ -25,19 +25,31 @@ const SiteHeader: React.FC = () => (
           Get Involved
         </Link>
         <div className="mt-1 text-green flex justify-between text-green">
-          <a href="#">
+          <a
+            href={`https://twitter.com/intent/tweet?url=${"https://google.com"}&text=${"test text"}&hashtags=hashtag,hashtag2`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="h-4 w-4 mx-1"
               src={require("./icons/ic_twitter.svg")}
             />
           </a>
-          <a href="#">
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://google.com&quote=QUOTEHERE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="h-4 w-4 mx-1"
               src={require("./icons/ic_facebook.svg")}
             />
           </a>
-          <a href="#">
+          <a
+            href={`mailto:?subject=${"Test subject"}&body=${"Test body"}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="h-4 w-4 mx-1"
               src={require("./icons/ic_email.svg")}
